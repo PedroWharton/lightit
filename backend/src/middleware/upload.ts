@@ -3,7 +3,6 @@ import path from "path";
 import fs from "fs";
 import sharp from "sharp";
 
-// Ensure uploads directory exists
 const uploadDir = "./uploads";
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
@@ -24,7 +23,6 @@ const fileFilter = (
   file: Express.Multer.File,
   cb: multer.FileFilterCallback
 ) => {
-  // Check file type
   if (file.mimetype === "image/jpeg" || file.mimetype === "image/jpg") {
     cb(null, true);
   } else {
@@ -36,7 +34,7 @@ export const upload = multer({
   storage,
   fileFilter,
   limits: {
-    fileSize: 5 * 1024 * 1024, // 5MB limit
+    fileSize: 5 * 1024 * 1024,
   },
 });
 
@@ -48,7 +46,6 @@ export const processImage = async (filePath: string): Promise<string> => {
     .jpeg({ quality: 80 })
     .toFile(processedPath);
 
-  // Remove original file and rename processed file
   fs.unlinkSync(filePath);
   fs.renameSync(processedPath, filePath);
 

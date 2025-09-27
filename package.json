@@ -1,7 +1,6 @@
 {
   "name": "patient-registration-app",
   "version": "1.0.0",
-  "author": "Pedro Wharton",
   "license": "MIT",
   "description": "Patient registration application with Express & React",
   "scripts": {

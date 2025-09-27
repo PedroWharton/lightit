@@ -1,7 +1,6 @@
 {
   "name": "patient-registration-backend",
   "version": "1.0.0",
-  "author": "Pedro Wharton",
   "license": "MIT",
   "description": "Backend for patient registration application",
   "main": "dist/index.js",

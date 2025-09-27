@@ -1,7 +1,6 @@
 {
   "name": "patient-registration-frontend",
   "version": "1.0.0",
-  "author": "Pedro Wharton",
   "license": "MIT",
   "description": "Frontend for patient registration application",
   "type": "module",

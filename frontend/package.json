@@ -17,7 +17,8 @@
     "react-hook-form": "^7.47.0",
     "react-dropzone": "^14.2.3",
     "framer-motion": "^10.16.4",
-    "lucide-react": "^0.292.0"
+    "lucide-react": "^0.292.0",
+    "axios": "^1.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

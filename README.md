@@ -65,7 +65,7 @@ A full-stack patient registration application built with Express.js, React, Type
 
    ```bash
    git clone <repository-url>
-   cd patient-registration-app
+   cd lightit
    ```
 
 2. **Start the application**
